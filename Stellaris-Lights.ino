@@ -57,12 +57,6 @@ void setColor(int color[3]) {
 }
 
 void setColor(int r, int g, int b) {
-    Serial.print(r);
-    Serial.print(" ");
-    Serial.print(g);
-    Serial.print(" ");
-    Serial.print(b);
-    Serial.println();
     analogWrite(RED_LED, constrain(r, 0, 255));
     analogWrite(GREEN_LED, constrain(g, 0, 255));
     analogWrite(BLUE_LED, constrain(b, 0, 255));
